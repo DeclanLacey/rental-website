@@ -1,0 +1,29 @@
+[
+    {   
+        "propId": 0,
+        "photos": ["src/57thstphotos/57thstcoverphoto.webp"],
+        "coverPhoto": "src/57thstphotos/57thstcoverphoto.webp",
+        "address": {
+            "street": "3839 57th St.",
+            "city": "Des Moines",
+            "state": "Iowa",
+            "zipCode": 50310
+        },
+        "rent": 1350,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "squareFeet": 688,
+        "leaseLength": "12 Months",
+        "available": false,
+        "catsAllowed": true,
+        "dogsAllowed": true,
+        "smokingAllowed": false,
+        "garageIncluded": true,
+        "utilitiesIncluded": false,
+        "lawnCareIncluded": false,
+        "snowRemovalIncluded": false,
+        "desc": "Check out this cozy house in the Merle Hay neighborhood. Within walking distance to the mall and other businesses in the area. With a full basement, detached garage, and storage shed, there is ample storage space. Recently remodeled bathroom and kitchen including new tile shower and kitchen cabinets. Stainless steel appliances throughout the kitchen as well as central air and heat. Cats and dogs (under 40 lbs) are allowed with an additional deposit and pet rent.",
+        "videoTourLink": "https://www.youtube.com/embed/5fx_YjByYDk?si=VdBdMz0phuFBGbZ6"
+    }
+    
+]
