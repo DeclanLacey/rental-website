@@ -1,6 +1,7 @@
 import '../styles/App.css'
 import HomePage from './HomePage'
 import Properties from './Properties'
+import PropertyMoreInfo from './PropertyMoreInfo'
 import RequestTourForm from './RequestTourForm'
 import {Link, Routes, Route} from "react-router-dom"
 
@@ -37,6 +38,7 @@ function App() {
         <Route path='/' element={<HomePage />}/>
         <Route path='/properties' element={<Properties />}/>
         <Route path='/request-tour' element={<RequestTourForm />}/>
+        <Route path='/property-details' element={<PropertyMoreInfo />} />
       </Routes>
     </div>
   )

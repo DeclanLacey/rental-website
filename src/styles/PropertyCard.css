@@ -21,23 +21,24 @@
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .available {
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
     background-color: green;
     margin-right: -12px;
     border-radius: 100px;
 }
 
 .unavailable {
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
     background-color: red;
     margin-right: -12px;
     border-radius: 100px;
-
 }
 
 .property-cover-img-container img {
@@ -54,6 +55,10 @@
     padding-bottom: 15px;
 }
 
+.address-rent-container h4 {
+    font-size: 14px;
+}
+
 .property-card-rent {
     font-size: 38px;
 }
@@ -61,4 +66,24 @@
 .property-card-details-container {
     padding-top: 10px;
     font-size: 22px;
+}
+
+.property-card-detail {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.property-info {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.property-card-link {
+    text-decoration: none;
+    color: black;
 }
