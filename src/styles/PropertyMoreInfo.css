@@ -1,0 +1,15 @@
+.property-more-info {
+    padding-top: 60px;
+}
+
+
+
+.property-more-info-address-rent-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 10px 0px 20px 0px;
+    border-bottom: 1px solid grey;
+}

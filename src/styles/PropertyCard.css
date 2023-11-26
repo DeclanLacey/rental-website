@@ -87,3 +87,8 @@
     text-decoration: none;
     color: black;
 }
+
+.property-card-detail-flex-container {
+    display: flex;
+    justify-content: space-between;
+}
