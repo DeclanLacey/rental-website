@@ -7,20 +7,16 @@ function Footer() {
     return (
         <div>
             <footer className="footer">
-                <div>
-                    <p className="copyright"> © 2024 Lacey Properties </p>
-                </div>
-                <div className="footer-content">
-                    <div className="footer-left">
-                        <p> Declan Lacey </p>
-                        <p className="owner-desc"> Owner/Property Manager </p>
+                <div className="footer-inner-container">
+                    <div>
+                        <p className="bold-footer-text"> Lacey Properties © 2024 </p>
+                        <p> Declan Lacey - Owner/Property Manager </p>
                     </div>
-                    <div className="footer-right">
-                        <p> Conact Us:</p>
-                        <p> lacey.properties.iowa@gmail.com </p>
+                    <div>
+                        <p className="bold-footer-text"> Contact Us:</p>
+                        <a className="email-link" href="mailto:lacey.properties.iowa@gmail.com"> Email: lacey.properties.iowa@gmail.com </a>
                     </div>
                 </div>
-                
             </footer>
         </div>
     )

@@ -72,6 +72,7 @@ function PropertyMoreInfo() {
   
   return (
     <div className="property-more-info">
+        
         <div className="property-img-container">
           <div className="slider">
               
@@ -91,11 +92,12 @@ function PropertyMoreInfo() {
             </div>
         </div>
 
-        <p className="property-more-info-desc"> This cozy and ideally located home in the Merle Hay Neighborhood is exactly what you've been waiting for. Located at 3839 57th St, this two- bedroom, one-bathroom home offers 688 sqft of living space. The home features hardwood floors, central air and heating, and beautiful windows that allow ample sunlight throughout the home. </p>
+        <div>
+          <p className="property-more-info-desc"> This cozy and ideally located home in the Merle Hay Neighborhood is exactly what you've been waiting for. Located at 3839 57th St, this two- bedroom, one-bathroom home offers 688 sqft of living space. The home features hardwood floors, central air and heating, and beautiful windows that allow ample sunlight throughout the home. </p>
+          <p className="property-more-info-desc"> All appliances are included, such as a refrigerator/freezer, dishwasher, microwave, washer, oven, dryer, and electric range. The newly remodeled kitchen and bathroom will awe you, setting this home apart from the competition. It also comes with ample storage and parking on the property.  </p>  
+          <p className="property-more-info-desc"> As an added bonus, cats and dogs are allowed (with additonal deposit and pet rent), meaning your furry friends can come along! Don't miss out on this one-of-a-kind opportunity – set up a showing today! </p>
+        </div>
         
-        <p className="property-more-info-desc"> All appliances are included, such as a refrigerator/freezer, dishwasher, microwave, washer, oven, dryer, and electric range. The newly remodeled kitchen and bathroom will awe you, setting this home apart from the competition. It also comes with ample storage and parking on the property.  </p>
-        
-        <p className="property-more-info-desc"> As an added bonus, cats and dogs are allowed (with additonal deposit and pet rent), meaning your furry friends can come along! Don't miss out on this one-of-a-kind opportunity – set up a showing today! </p>
         <div className="property-more-info-detail-container">
           <div>
 
@@ -171,7 +173,6 @@ function PropertyMoreInfo() {
         
         <div className="tour-btn-container">
           <Link className="request-tour-btn" to="/request-tour" >Request Tour Now!</Link>
-
         </div>
 
     </div>

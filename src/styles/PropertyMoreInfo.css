@@ -46,8 +46,7 @@
     padding: 15px;
     padding-top: 10px;
     font-size: 1.6rem;
-    /* display: flex;
-    justify-content: space-between; */
+
 
 }
 
@@ -87,17 +86,23 @@
     border-radius: 30px;
     font-size: 19px;
     cursor: pointer;
-    margin-top: -30px;
     transition: transform 450ms;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 1px;
+    margin-bottom: 15px;
 }
 
 .request-tour-btn:hover {
     transform: scale(1.1);
+}
+
+.property-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* ////////////////////////// carousel styling ////////////////////////// */
@@ -108,7 +113,7 @@
     overflow: hidden;
     width: 100%;
     object-fit: cover;
-    max-width: 700px;
+    max-width: 750px;
 }
 
 .slide {
@@ -161,3 +166,81 @@
     right: 2%;
 }
   
+/* /////////////////// Media Query ///////////////// */
+
+@media (min-width: 700px) {
+    .slider {
+        height: 480px;
+    }
+
+    .slide {
+        height: 480px;
+    }
+
+    .property-more-info-address-rent-container {
+        font-size: 1.5rem;
+    }
+
+    .property-more-info {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .property-more-info-desc {
+        font-size: 1.4rem;
+        line-height: 40px;
+    }
+
+    .video {
+        height: 350px;
+    }
+}
+
+@media (min-width: 850px) {
+    .property-more-info-detail-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.7rem;
+    }
+    
+    .property-more-info-flex-container {
+        width: 350px;
+    }
+
+    .request-tour-btn {
+        width: 400px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .property-more-info-flex-container {
+        width: 450px;
+    }
+
+    .property-more-info-detail-container {
+        font-size: 2rem;
+    }
+
+    .property-more-info {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+    .video {
+        height: 500px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .property-more-info-desc {
+        font-size: 1.7rem;
+        line-height: 50px;
+    }
+
+    .property-more-info-flex-container {
+        width: 600px;
+    }
+}
