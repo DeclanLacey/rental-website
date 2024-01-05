@@ -1,12 +1,19 @@
 .property-card {
     height: fit-content;
     width: fit-content;
-    background-color: #e9ecef;
+    background-color: white;
     height: fit-content;
     width: fit-content;
     padding: 20px;
+    padding-top: 10px;
     max-width: 350px;
-    border-radius: 10px;
+    border-radius: 5px;
+    min-width: 320px;
+    margin: 5px;
+    box-shadow: 2px 2px 8px black;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    border: 2px solid #04349C;
 }
 
 .availability {
@@ -14,6 +21,8 @@
     padding: 6px 20px 6px 20px;
     color: black; 
     border-radius: 40px;
+    font-weight: 600;
+    font-size: 17px;
 }
 
 .availability-container {
@@ -43,15 +52,16 @@
 
 .property-cover-img-container img {
     width: 100%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border: 1px solid #04349C
 }
 
 .address-rent-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-top: 10px;
-    border-bottom: 1px solid grey;
+    border-bottom: 2px solid #04349C;
     padding-bottom: 15px;
 }
 
@@ -60,7 +70,7 @@
 }
 
 .property-card-rent {
-    font-size: 38px;
+    font-size: 42px;
 }
 
 .property-card-details-container {
@@ -91,4 +101,41 @@
 .property-card-detail-flex-container {
     display: flex;
     justify-content: space-between;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.more-info-btn {
+    background-color: #f87f28;
+    border: none;
+    width: 100%;
+    max-width: 400px;
+    height: 35px;
+    color: white;
+    border-radius: 30px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: transform 450ms;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1px;
+}
+
+.more-info-btn:hover {
+    transform: scale(1.07);
+}
+
+@media (min-width: 1100px) {
+    .property-card {
+        max-width: 450px;
+        font-size: 1.5rem;
+    }
 }

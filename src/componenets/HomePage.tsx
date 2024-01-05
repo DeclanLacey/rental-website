@@ -1,13 +1,12 @@
 import '../styles/HomePage.css'
+import {Link} from "react-router-dom"
 
 function HomePage() {
 
   return (
     <div className='homepage-container'>
-        <div className='company-name-container'>
-            <h1 className='company-name'> Lacey Properties </h1>
-            <p className='company-name-subtitle'> Des Moines, Iowa</p>
-        </div>
+            <img className='homepage-logo' src='src\images\logoPhotos\Print_Transparent.svg'/>
+            <Link className='homepage-btn' to="/properties"> See Current Properties </Link>
     </div>
   )
 }

@@ -2,43 +2,47 @@
 .homepage-container {
     height: 100vh;
     margin-bottom: -20px;
-    background-image: url("src/images/dsmskyline.jpg");
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     z-index: -20;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.company-name-container {
-    background-color: transparent;
-    border: 5px solid white;
-    height: 45%;
-    max-height: 220px;
-    min-height: 150px;
-    width: 85%;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-.company-name {
+
+.homepage-logo {
+    max-width: 900px;
+    padding-bottom: -100px;
+    overflow: hidden;
+    margin-top: -80px;
+}
+
+.homepage-btn {
+    background-color: #f87f28;
+    border: none;
+    width: 270px;
+    height: 40px;
     color: white;
-    text-shadow: 1px 2px black;
-}
-
-.company-name-subtitle {
+    border-radius: 30px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: -30px;
+    transition: transform 450ms;
     text-decoration: none;
-    color: white;
-    text-shadow: 1px 1px black;
-    letter-spacing: 2px;
-    font-size: 14px;
-    margin-bottom: 2px;
-    transition: color 400ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1px;
 }
 
+.homepage-btn:hover {
+    transform: scale(1.07);
+}
+
+@media (min-width: 1100px) {
+    .homepage-btn {
+        width: 350px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}

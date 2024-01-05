@@ -17,7 +17,7 @@ function PropertyCard({data} : Props) {
 
   return (
     <div className="property-card">
-      <Link className="property-card-link" to='/property-details' state={data}>
+      
         <div className="availability-container">
           <div className={data.available ? "available" : "unavailable"}></div>
           <p className="availability"> {data.available ? "Available" : "Unavailable"}</p>
@@ -43,18 +43,21 @@ function PropertyCard({data} : Props) {
               <p className="property-card-detail"> <GiResize className="icon" /> Square Feet: <span className="property-info">{data.squareFeet}</span> </p>
               <p className="property-card-detail"> <LuCat className="icon" /> Cats Allowed: <span className="property-info">{data.catsAllowed ? "Yes" : "No"}</span> </p>
               <p className="property-card-detail"> <LuDog className="icon"/> Dogs Allowed: <span className="property-info">{data.dogsAllowed ? "Yes" : "No"}</span> </p>
-              <p className="property-card-detail"> <MdOutlineYard className="icon"/> Lawn Care: <span className="property-info">{data.lawnCareIncluded ? "Landlord" : "Tenant"}</span> </p>
+              {/* <p className="property-card-detail"> <MdOutlineYard className="icon"/> Lawn Care: <span className="property-info">{data.lawnCareIncluded ? "Landlord" : "Tenant"}</span> </p> */}
             </div>
-            <div>
+            {/* <div>
               <p className="property-card-detail"> <MdOutlinePower className="icon"/> Utilites Included: <span className="property-info">{data.utilitiesIncluded ? "Yes" : "No"}</span> </p>
               <p className="property-card-detail"> <TbSmoking className="icon"/> Smoking Allowed: <span className="property-info">{data.smokingAllowed ? "Yes" : "No"}</span> </p>
               <p className="property-card-detail"> <PiGarage className="icon"/> Garage Included: <span className="property-info">{data.garageIncluded ? "Yes" : "No"}</span> </p>
               <p className="property-card-detail"> <BsThermometerSnow className="icon"/> Snow Removal: <span className="property-info">{data.snowRemovalIncluded ? "Landlord" : "Tenant"}</span> </p>
               <p className="property-card-detail"> <GrDocumentLocked className="icon"/> Lease Length: <span className="property-info">{data.leaseLength}</span> </p>
-            </div>
+            </div> */}
           </div>
         </div>
-      </Link>
+        <div className="button-container">
+          {/* <button className="more-info-btn"> More Info </button> */}
+          <Link className="more-info-btn" to='/property-details' state={data} > More Info</Link>
+        </div>
     </div>
   )
 }
